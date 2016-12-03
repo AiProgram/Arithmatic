@@ -55,18 +55,18 @@ public class demo {
 	}
 	
 	static String fracAdd(int first_numerator,int first_denominator,int second_numrator,int second_denominator){  
-        //ÒÔÏÂ´úÂëÄÜ¹»ÔÚ¿ØÖÆÌ¨ÉÏÏÔÊ¾½á¹û  
-        //ĞèÒªµ÷ÓÃÇó×î´ó¹«Ô¼ÊıµÄº¯Êı  
-        //ĞèÒªµ÷ÓÃÇó×îĞ¡¹«±¶ÊıµÄº¯Êı  
+        //ä»¥ä¸‹ä»£ç èƒ½å¤Ÿåœ¨æ§åˆ¶å°ä¸Šæ˜¾ç¤ºç»“æœ  
+        //éœ€è¦è°ƒç”¨æ±‚æœ€å¤§å…¬çº¦æ•°çš„å‡½æ•°  
+        //éœ€è¦è°ƒç”¨æ±‚æœ€å°å…¬å€æ•°çš„å‡½æ•°  
         int denominator;  
         int numerator;  
           
-        if(first_denominator==second_denominator)  //·ÖÄ¸ÏàÍ¬Ê±¼Ó·Ö×Ó       
+        if(first_denominator==second_denominator)  //åˆ†æ¯ç›¸åŒæ—¶åŠ åˆ†å­       
         {        
              denominator=first_denominator;        
              numerator=first_numerator+second_numrator;        
         }        
-        else  //·ñÔòÍ¬·Ö±È½Ï·Ö×Ó       
+        else  //å¦åˆ™åŒåˆ†æ¯”è¾ƒåˆ†å­       
         {        
             denominator=first_denominator*second_denominator;        
             numerator=first_numerator*second_denominator+first_denominator*second_numrator;        
@@ -74,37 +74,42 @@ public class demo {
         int gcd = gcd(numerator,denominator);  
         denominator = denominator / gcd;  
         numerator = numerator / gcd;          
-        System.out.println("Êä³öµÄ½á¹ûÊÇ"+numerator+"/"+denominator);   
+        //System.out.println("è¾“å‡ºçš„ç»“æœæ˜¯"+numerator+"/"+denominator);   
         return numerator+"/"+denominator;        
   
     }  
     static String fracSub(int first_numerator,int first_denominator,int second_numrator,int second_denominator){  
-        //ÒÔÏÂ´úÂëÄÜ¹»ÔÚ¿ØÖÆÌ¨ÉÏÏÔÊ¾½á¹û  
-        //ĞèÒªµ÷ÓÃÇó×î´ó¹«Ô¼ÊıµÄº¯Êı  
+        //ä»¥ä¸‹ä»£ç èƒ½å¤Ÿåœ¨æ§åˆ¶å°ä¸Šæ˜¾ç¤ºç»“æœ  
+        //éœ€è¦è°ƒç”¨æ±‚æœ€å¤§å…¬çº¦æ•°çš„å‡½æ•°  
           
         int denominator;  
         int numerator;  
           
-        if(first_denominator==second_denominator)  //·ÖÄ¸ÏàÍ¬Ê±¼Ó·Ö×Ó       
+        if(first_denominator==second_denominator)  //åˆ†æ¯ç›¸åŒæ—¶åŠ åˆ†å­       
         {        
              denominator=first_denominator;        
              numerator=first_numerator-second_numrator;        
         }        
-        else  //·ñÔòÍ¬·Ö±È½Ï·Ö×Ó       
+        else  //å¦åˆ™åŒåˆ†æ¯”è¾ƒåˆ†å­       
         {        
             denominator=first_denominator*second_denominator;        
             numerator=first_numerator*second_denominator-first_denominator*second_numrator;        
         }      
         int gcd = gcd(numerator,denominator);  
         denominator = denominator / gcd;  
-        numerator = numerator / gcd;          
-        System.out.println("Êä³öµÄ½á¹ûÊÇ"+numerator+"/"+denominator);   
+        numerator = numerator / gcd;  
+	if(denominator<0)
+        {
+        	denominator=-denominator;
+        	numerator =-numerator;
+        }  
+        //System.out.println("è¾“å‡ºçš„ç»“æœæ˜¯"+numerator+"/"+denominator);   
         return numerator+"/"+denominator;        
   
     }  
     static String fracMul(int first_numerator,int first_denominator,int second_numerator,int second_denominator){  
-        //ÒÔÏÂ´úÂëÄÜ¹»ÔÚ¿ØÖÆÌ¨ÉÏÏÔÊ¾½á¹û  
-        //ĞèÒªµ÷ÓÃÇó×î´ó¹«Ô¼ÊıµÄº¯Êı  
+        //ä»¥ä¸‹ä»£ç èƒ½å¤Ÿåœ¨æ§åˆ¶å°ä¸Šæ˜¾ç¤ºç»“æœ  
+        //éœ€è¦è°ƒç”¨æ±‚æœ€å¤§å…¬çº¦æ•°çš„å‡½æ•°  
           
         int denominator;  
         int numerator;  
@@ -116,13 +121,13 @@ public class demo {
         int gcd = gcd(numerator,denominator);  
         denominator = denominator / gcd;  
         numerator = numerator / gcd;          
-        System.out.println("Êä³öµÄ½á¹ûÊÇ"+numerator+"/"+denominator);   
+        //System.out.println("è¾“å‡ºçš„ç»“æœæ˜¯"+numerator+"/"+denominator);   
         return numerator+"/"+denominator;        
   
     }  
     static String fracDiv(int first_numerator,int first_denominator,int second_numerator,int second_denominator){  
-        //ÒÔÏÂ´úÂëÄÜ¹»ÔÚ¿ØÖÆÌ¨ÉÏÏÔÊ¾½á¹û  
-        //ĞèÒªµ÷ÓÃÇó×î´ó¹«Ô¼ÊıµÄº¯Êı  
+        //ä»¥ä¸‹ä»£ç èƒ½å¤Ÿåœ¨æ§åˆ¶å°ä¸Šæ˜¾ç¤ºç»“æœ  
+        //éœ€è¦è°ƒç”¨æ±‚æœ€å¤§å…¬çº¦æ•°çš„å‡½æ•°  
           
         int denominator;  
         int numerator;  
@@ -135,7 +140,7 @@ public class demo {
         int gcd = gcd(numerator,denominator);  
         denominator = denominator / gcd;  
         numerator = numerator / gcd;          
-        System.out.println("Êä³öµÄ½á¹ûÊÇ"+numerator+"/"+denominator);   
+        //System.out.println("è¾“å‡ºçš„ç»“æœæ˜¯"+numerator+"/"+denominator);   
         return numerator+"/"+denominator;        
   
     }
