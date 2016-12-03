@@ -1,4 +1,4 @@
-package mainFun;
+
 
 import java.util.Scanner;
 
@@ -6,13 +6,13 @@ public class endFun {
 	
 	int wrong,right;
 	//读取结果并判断对错
-	public void outAndFinish(create c)
+	public void outAndFinish(SimpleCaculator sc)
 	{
 		right=wrong=0;
 		
 		String str1=null;
 		Scanner scanner=new Scanner(System.in);
-		for (int i=0;i<c.anser.length;i++)
+		/*for (int i=0;i<sc.anser.length;i++)
 		{
 			System.out.println("请输入第"+(i+1)+"题答案:");
 			str1=scanner.next();
@@ -39,7 +39,7 @@ public class endFun {
 				
 				
 			}
-		}
+		}*/
 		
 		
 	}

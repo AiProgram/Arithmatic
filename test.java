@@ -1,8 +1,8 @@
-package test;
+
 
 import org.junit.Test;
 
-public class TestDemo {
+public class test {
  @Test
  public  void Test()
  {

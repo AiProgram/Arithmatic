@@ -174,8 +174,8 @@ public class RandMath {
 		}
 		else 
 		{
-			subjectSymbol=ra.nextInt(2);;
-			if(subjectSymbol==1)
+			subjectSymbol=ra.nextInt(1);
+			if(subjectSymbol==0)
 			{
 				
 				Creatoperator();
@@ -184,10 +184,10 @@ public class RandMath {
 				if(operatorSymbol=="/"&&(y==0||y==1))
 				{
 					y=ra.nextInt(9)+2;
-					return ""+x+","+y;
-				}
 					
-				return ""+x+operatorSymbol+y;
+				}
+				return ""+x+","+y;
+				//return ""+x+operatorSymbol+y;
 			}
 			else
 			{

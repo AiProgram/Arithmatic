@@ -8,10 +8,10 @@ public class TestRandMath {
 		
 		RandMath randMath=new RandMath();
 		//randMath.SetPattern(1);
-		randMath.SetPattern(0);
-		randMath.SetSubjectPatterm(0);
-		System.out.println(randMath.CreatMath(1));
-		
+		randMath.SetPattern(1);
+		randMath.SetSubjectPatterm(1);
+		//System.out.println(randMath.CreatMath(1));
+		System.out.println(randMath.CreatSubject());
 		
 	}
 	
