@@ -2,29 +2,29 @@ import java.util.Random;
 
 
 public class RandMath {
-	//æ¨¡å¼
+	//Ä£Ê½
 	private int  pattern;
-	//è¿”å›ç»“æœ
+	//·µ»Ø½á¹û
 	private String result;
-	//è¿ç®—æ¨¡å¼
+	//ÔËËãÄ£Ê½
 	private int subjectPatterm;
-	//è¿ç®—ç¬¦1
+	//ÔËËã·û1
 	private String operatorSymbol;
-	//è¿ç®—ç¬¦2
+	//ÔËËã·û2
 	private String operatorSymbol1;
 	private int subjectSymbol;
-	//è®¾ç½®æ¨¡å¼ 0 ç®€å•æ¨¡å¼ 1æ··åˆæ¨¡å¼
+	//ÉèÖÃÄ£Ê½ 0 ¼òµ¥Ä£Ê½ 1»ìºÏÄ£Ê½
 	public void SetPattern(int pattern)
 	{
 		this.pattern=pattern;
 	}
-	//è®¾ç½®æ˜¯å¦çœŸåˆ†æ•° 0 æ™®é€šå››åˆ™è¿ç®— 1 çœŸåˆ†æ•°å››åˆ™è¿ç®—
+	//ÉèÖÃÊÇ·ñÕæ·ÖÊı 0 ÆÕÍ¨ËÄÔòÔËËã 1 Õæ·ÖÊıËÄÔòÔËËã
 	public void SetSubjectPatterm(int type)
 	{
 		
 		this.subjectPatterm=type;
 	}
-	// åˆ›å»ºç®—å¼
+	// ´´½¨ËãÊ½
 	public String CreatSubject()
 	{
 		Random ra =new Random();
@@ -111,7 +111,7 @@ public class RandMath {
 		return result;
 		
 	}
-	//åˆ›å»ºè¿ç®—ç¬¦
+	//´´½¨ÔËËã·û
 	public void Creatoperator()
 	{
 		Random ra =new Random();
@@ -131,7 +131,7 @@ public class RandMath {
 			break;
 		}
 	}
-	//åˆ›å»ºç®€å•è¿ç®—å¼
+	//´´½¨¼òµ¥ÔËËãÊ½
 	public String  CreatMath(int type)
 	{
 		Random ra =new Random();
